@@ -3,6 +3,7 @@ class FlatsController < ApplicationController
   before_action :set_flats, only: [:index, :show]
 
   def index
+    # just comment
   end
 
   def show
