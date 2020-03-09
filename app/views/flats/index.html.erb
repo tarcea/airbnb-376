@@ -1,0 +1,16 @@
+
+<h1>Flats</h1>
+
+<ul>
+  <% @flats.each do |flat| %>
+  <li>
+    <h2>
+      <%= link_to flat["name"], flat_path(flat["id"])  %> <%= flat["price"] %> <%= flat["priceCurrency"] %>
+    </h2>
+    <img src="<%= flat["imageUrl"] %>" alt="">
+  </li>
+  <% end %>
+
+<!-- "name"=>"Charm at the Steps of the Sacre Coeur/Montmartre", "imageUrl"=>"https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg", "price"=>164, "priceCurrency"=>"EUR", "lat"=>48.884211, "lng"=>2.34689} -->
+</ul>
+
